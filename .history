@@ -98,3 +98,56 @@ cd Repos
 git clone https://github.com/Laurajimo/Command_lines_MasterDS.git
 cd Command_lines_MasterDS
 cp ~/.history .
+ll
+ls -a
+git add .history
+git commit -m "first 5h of master"
+gedit .history
+ls -a
+git push
+cp ~/.history History
+cp ~/.history .
+git add -u
+cd
+mkdir first_dir
+ls
+cd first_dir
+touch text_file.txt
+ll
+ls
+ls -l
+chmod 674
+chmod 674 text_file.txt
+chmod 676 text_file.txt
+ls -l
+mkdir sub1
+mkdir sub2 and text_file
+ls
+cp -p text_file.txt text_file
+ls
+cd text_file
+ls
+mv text_file.txt sub2/text_file.txt.2
+mv text_file.txt sub2 /text_file.txt.2
+mv text_file.txt sub2
+ls sub2
+cd first dir
+ls
+ls -l
+cd first_dir
+cd
+ls
+cd first_dir
+mv text_file.txt sub2
+ls sub2
+cp sub1 sub3
+cp -r sub1 sub3
+ls sub3
+mv sub2/text_file.txt sub2/text_file.txt.backup
+mv sub2/text_file.txt.backup ./.text_file.txt.backup
+ls -a
+rm -r sub2
+ll
+cd
+cd Repos/Command_lines_MasterDS
+cp ~/.history .
