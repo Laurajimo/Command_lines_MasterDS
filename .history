@@ -1,0 +1,100 @@
+ls
+echo $SHELL
+whoami
+echo $TERM
+echo $USER
+echo "mi usuario es $USER"
+echo $
+echo holi
+echo $"USER"
+mivariable=42
+echo $mivariable
+date
+echo "hoy es el d\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+´\
+otra linea"
+cd Data/shell
+cd Da
+ls
+cat Text_example.txt
+cat -n Text_example.txt
+cat-n Text_example.txt Text_example.txt Text_example.txt
+pwd
+ git
+git clone https://github.com/IgorAramb/DS_CL_files.git
+ls
+cd DS_CL_files
+ls
+man
+man ls
+git config --global user.name "Laurajimo"
+git config --global user.email "laura.jim.mor@gmail.com"
+git clone https://github.com/Laurajimo/master-kschool.git
+LS
+ls
+cat README.md
+touch nuevoarchivo
+touch modelomlparaconquistarelmundo
+git
+git config --global user.name "Laurajimo"
+git config --global user.email "laura.jim.mor@gmail.com"
+cat .gitconfig
+cd
+git config --global user.name "Laura"
+cat .gitconfig
+gedit .config
+gedit .gitconfig
+ls
+mkdir Repos
+cd Repos
+git clone https://github.com/Laurajimo/master-kschool.git
+https://github.com/Laurajimo/master-kschool.git Otro_dir_name
+git https://github.com/Laurajimo/master-kschool.git Otro_dir_name
+git clone https://github.com/Laurajimo/master-kschool.git Otro_dir_name
+ls
+pwd
+git clone https://github.com/Laurajimo/master-kschool.git ../Pictures/nombre_repos_2
+ls ../Pictures/
+ls
+git init Master_class_local_start
+ll
+cd Master_class_local_start
+git status
+touch first_file.txt
+touch second_file
+ll
+gedit first_file.txt
+git add first_file.txt
+git status
+git add second_file
+git status
+git commit -m "first commit"
+git status
+git log
+gedit first_file.txt
+git add -u
+git status
+git commit
+git log
+git remote -v
+git remote add origin https://github.com/Laurajimo/Local_init.git
+git remote -v
+git branch -M master
+git push -u origin master
+cd 
+cat .history
+cd Repos
+git clone https://github.com/Laurajimo/Command_lines_MasterDS.git
+cd Command_lines_MasterDS
+cp ~/.history .
