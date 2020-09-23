@@ -598,3 +598,78 @@ cat .history
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+ll
+ls -a
+git add .histoory
+git add .history
+git commit -m "Revising Command Line Basic Tools at home"
+git log
+git push
+ls
+man bash
+man ls
+cat --help
+man cat
+man less
+ls
+cd ./Data/opentraveldata
+ls
+less optd_airlines.csv 
+less test_file
+less -N ref_airline_nb_of_flights.csv
+cat ref_airline_nb_of_flights.csv
+less ref_airline_nb_of_flights.csv
+less -N ref_airline_nb_of_flights.csv
+less -S ref_airline_nb_of_flights.csv
+less ref_airline_nb_of_flights.csv
+ls
+less optd_aircraft.csv
+less -S optd_aircraft.csv
+less optd_aircraft.csv
+less -S optd_aircraft.csv
+less -N ref_airline_nb_of_flights.csv
+c
+cd
+cd ./Data/shell/
+ls
+less -N Finn.txt
+less -N ../opentraveldata/optd_aircraft.csv
+tree --help
+man tree
+tree --h
+tree -h
+cd
+tree --help
+sudo tree --help
+sudo apt install tree
+tree
+sudo apt install tree
+alias
+tree ./Data
+type ls
+type ll
+alias sl='ls'
+type sl
+alias p='pwd'
+alias gs='git status'
+alias gl='git log'
+type gs
+alias ga="git add"
+type ga
+alias gu='git add -u'
+alias gc='git commit -m'
+type gc
+H='| head'
+L='| less'
+T="| tail"
+type H
+which is
+which ls
+which python
+which -a python
+whereis python
+cat .history
+exit
+cd ./Repos
+cd ./Command_lines_MasterDS
+cp ~/.history .
