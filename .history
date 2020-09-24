@@ -673,3 +673,161 @@ exit
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+cp ~/.history History
+git add .history
+git commit -m "Revising Command Line Basic Tools at home part 2"
+git log
+git push
+cd
+cd ./Data
+ls -a
+cat README.md
+ls
+cd
+ls
+cd ./Data/shell
+cd
+ls
+cd ./Data/shell
+ls -a
+cd
+cat .history
+cd ./Data/shell
+la
+cd
+echo $HISTFILE
+"echo $HISTFILE"
+~/.history
+man history
+history --help
+history -h
+history
+history -i
+history -f
+history -50
+history | tail -10
+cd ./Data/opentraveldata
+ls
+ls -l
+tail -c 50 optd_airlines.csv
+tail -c +50 optd_airlines.csv
+tail -n 50 optd_airlines.csv
+tail -n 5 optd_airlines.csv
+tail -n +5 optd_airlines.csv
+tail -f optd_airlines.csv
+tail -3 optd_aircraft.csv
+tail -n -1 optd_aircraft.csv
+cat optd_aircraft.csv
+tail -n -1 optd_aircraft.csv
+tail -3 optd_aircraft.csv
+tail -1  optd_aircraft.csv
+tail -n 1 optd_aircraft.csv
+tail -3 optd_aircraft.csv
+tail -n -3 optd_aircraft.csv
+tail -n 3 optd_aircraft.csv
+tail -n +3 optd_aircraft.csv
+head optd_aircraft.csv
+head -n 3 optd_aircraft.csv
+head optd_aircraft.csv
+head -n 450 optd_aircraft.csv
+head -n -450 optd_aircraft.csv
+head -3 optd_aircraft.csv
+head -n +3 optd_aircraft.csv
+ls
+cat test_file
+wc test_file
+la -l
+wc -c test_file
+wc --bytes test_file
+wc --chars test_file
+wc -m test_file
+wc -l test_file
+wc --lines test_file
+wc --words test_file
+wc -w test_file
+echo "How much line/words/letters do I have?" | wc
+cat test_file
+cat test_file | wc
+wc test_file
+cat test_file | wc -l
+tail -c -1k optd_aircraft.csv| wc
+head -c 1K optd_aircraft.csv
+head -c 1K optd_aircraft.csv | wc
+tail -c -1k optd_aircraft.csv| wc
+wc -l < hello-world
+cd
+ls
+cd ./Data/opentraveldata
+ls
+wc -l < test_file
+<test_file wc -l
+cat test_file | wc -l
+<test_file cat | wc -l
+ls -S
+echo "Quick exercise: save infom of the largest file located in opentraveldata"
+ls -s
+ls -lS
+head ls -lS
+ls -lS | head
+ls -lS | head -1
+ls -lS | head -2
+ls -lS | head -2 | touch largest_file.txt
+ls
+cat largest_file.txt
+ls -lS | head -2 | cp largest_file.txt
+cat largest_file.txt
+ls -lS  | head -2 < largest_file.txt
+cat largest_file.txt
+ls -lS  | head -2 > largest_file.txt
+cat largest_file.txt
+ls -lS  | head -2 | tail -1
+ls -lS  | head -2 | tail -1 > largest_file.txt
+cat largest_file.txt
+echo "How many words do first 5 lines of the Finn.txt have?"
+ls
+cd ../
+ls
+cd ./shell
+ls
+head -5 Finn.txt | wc -w
+ls
+head -3 Text_example.txt | cat -n
+echo "Use Text_example.txtto generate a new file with the same content but with line number at the beginning of each line."
+cat -n Text_example.txt
+cat -n Text_example.txt > Text_example.txt.numerado
+ls
+cat Text_example.txt.numerado
+echo "Generate a new file with twice the content of â€ƒ¼Text_example.txtâ€ƒ½ one after another inside the file. (one full text content after another"
+cp Text_example.txt ./ >> cat Text_example.txt
+cat Text_example.txt Text_example.txt
+cat Text_example.txt Text_example.txt >> Text_example.txt.doble
+ls
+cat Text_example.txt.doble
+cat /etc/os-release
+echo "Generate a file with creation timestamp and name of the user who created it on the first line."
+echo "This file is created by KSCHOOL on "$DATE""
+echo "This file is created by KSCHOOL on $DATE"
+echo "This file is created by KSCHOOL on $(date)"
+echo "This file is created by KSCHOOL on $(date)">> authorname_file
+ls
+cat authorname_file
+cd
+tail -20 .history >> History_exercise
+cat History_exercise
+cat -n History_exercise
+echo "Print content of Text_example.txtexcept first 2 and last 3 lines"
+cd ./Data/shell
+ls
+cat Text_example.txt
+tail +2 Text_example.txt
+tail +3 Text_example.txt | head -3
+tail +3 Text_example.txt
+tail -n +3 Text_example.txt
+cat Text_example.txt
+tail -n +3 Text_example.txt | head -n -2
+wc -l ../opentraveldata/optd_aircraft.csv
+cat ../opentraveldata/optd_aircraft.csv | wc -l
+cd
+cd ./Repos
+cd ./Command_lines_MasterDS
+cp ~/.history .
