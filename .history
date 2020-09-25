@@ -831,3 +831,65 @@ cd
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+git add .history
+git commit -m "Revising Command Line Basic Tools at home part 3"
+git log
+git push
+cd ./Data/opentraveldata
+ls
+cd ../shell
+ls
+cd
+ls
+find -name "test_file*"
+find -iname "tESt_file*"
+find -type d -name "test_file*"
+find -type f -name "test_file*"
+cd
+find -maxdepth 5 -type f -name "text_file*"
+find -maxdepth 5 -type f -iname "text_file*"
+find -type f -name "text_file*" -maxdepth 5
+find -maxdepth 5 -type f -perm777 -name "text_file*"
+find -maxdepth 5 -type f -perm 777 -name "text_file*"
+find -maxdepth 5 -type f ! -perm 777 -name "text_file*"
+find -maxdepth 1 -empty
+find -maxdepth 1 -not -empty
+find -maxdepth 1 ! -empty
+find ./Data -size +10M
+find -maxdepth 2 -size -1k
+find . -mmin 60
+find . -mmmin -60
+find . -mmin -60
+find . -maxdepth 1 -mtime -1
+find . -maxdepth 1 -mtime -2
+find . -maxdepth 1 -mtime -1 -! -name ".*"
+find -maxdepth 5 -type f -name "text_file*"  -exec echo "FOUND IT" \;
+find -maxdepth 5 -type f -name "text_file*"
+find -maxdepth 5 -type f -name "text_file*"  -exec ls -l {} \;
+find -maxdepth 5 -type f -name "text_file*" -ok ls -l 
+find -maxdepth 5 -type f -name "text_file*" -ok ls -l {} \;
+find -maxdepth 5 -type f -name "text_file*"  -exec ls -l {} \; -exec head -2 
+find -maxdepth 5 -type f -name "text_file*"  -exec ls -l {} \; -exec head -2 {} \;
+find -maxdepth 5 -type f -name "text_file*" -ok rm -r {} \;
+find -maxdepth 5 -type f -name "text_file*"  -exec ls -l {} \; -exec head -2 {} \;
+find -maxdepth 5 -type f -name "text_file*"  -exec ls -l {} \; -exec head -2 {} +;
+find . -maxdepth 2 -type f -mmin -60 -exec ls -l {} \; -exec echo "YES" \; -exec sleep 5 \;
+find . -maxdepth 2 -type f -mmin -60 -exec zsh -c -exec ls -l {} | wc \;
+find . -maxdepth 2 -type f -mmin -60 -exec zsh -c " ls -l {} \| wc " \;
+find . -maxdepth 2 -type f -mmin -60 -exec zsh -c " ls -l {} | wc " \;
+find . -maxdepth 2 -type f -mmin -60 -exec sh -c " ls -l {} \;"| wc
+find . -maxdepth 2 -type f -mmin -60 -exec sh -c " ls -l {} \;" | wc
+find . -maxdepth 2 -mmin -60
+find . -maxdepth 2 -empty -! -perm 777
+cd ./Data
+find . -maxdepth 2 -type f -exec ls -l {} \;ç
+find . -maxdepth 2 -type f -exec ls -l {} \;
+find . -maxdepth 2 -type f -exec ls -lS {} \;
+find . -maxdepth 2 -type f -exec zsh -c "ls -lS {} | head -3" \;
+find . -maxdepth 2 -type f -exec echo {} \; -exec zsh -c "ls -lS {} | head -3" \;
+find . -maxdepth 2 -type f -exec echo {} \; -exec zsh -c "ls -lS {} | head 3" \;
+find . -mindepth 1 -type d -exec echo {} \; -exec zsh -c "ls -lS {} | head 3" \;
+find . -mindepth 1 -type d -exec echo {} \; -exec zsh -c "ls -lS {} | head -3" \;
+cd
+cd ./Repos/Command_lines_MasterDS
+cp ~/.history .
