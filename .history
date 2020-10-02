@@ -1100,3 +1100,131 @@ cd
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+git add .history
+git commit -m "Class 3 20200925"
+git log
+git push
+cd
+python
+python ipython
+ipython
+mkdir Python
+ls
+cd ./Python
+jupyter-notebook
+cat .gitconfig
+cat ~/.gitconfig
+cd ./Repos
+ls
+cd ./master-kschool
+d
+cd
+cd ./Repos
+ls
+cd ./Otro_dir_name
+cd
+ls
+cd ./DS_CL_files
+cd
+mkdir . Test
+mkdir Test .
+ls
+cd ./Test
+ls
+git clone https://github.com/IgorAramb/DS_CL_files.git
+cd ./DS_CL_files
+kwrite readme.txt
+ls
+kwrite README.md
+gedit README.md
+git status
+git diff
+git add
+git add README.md
+git diff
+dit status
+git status
+git commit -m "Descripción del archivo README"
+git status
+git push -u origin master
+cd
+cd ./Repos
+ls
+mkdir ./prueba-git
+ls
+echo "I am doing a test" >> README.md
+cd ./prueba-git
+ls
+echo "I am doing a test" >> README.md
+ls
+git init
+git status
+git add README.md
+git status
+git commit -m "Primer commit de prueba"
+git status
+git ls-files
+cat .gitignore
+echo "*~" >.gitignore
+git ls-files
+ls
+ls -a
+cat .gitignore
+git status
+git ls-files
+git add .gitignore
+git ls-files
+git log
+git config -l
+echo "Dealing with oh sh*t" >> "Prueba.txt
+ls
+echo "Dealing with oh sh*t" >> Prueba.txt
+ls
+gitstatus
+git status
+git add Prueba.txt
+git status
+gedit Prueba.txt
+git status
+git add Prueba.txt
+git commit -m "Prueba.txt con modificaciones"
+git reset origin/master
+git status
+gedit Prueba.txt
+git add Prueba.txt
+gedit Prueba.txt
+git status
+git reset --hard origin/master
+git status
+git checkout -- Prueba.txt
+cat Prueba.txt
+git status
+git commit -m "Creo archivo de prueba"
+git status
+rm Prueba.txt
+ls
+git checkout Prueba.txt
+ks
+ls
+rm Prueba.txt
+git add Prueba.txt
+git status
+git checkout Prueba.txt
+git status
+git commit -m "He eliminado Prueba.txt"
+git status
+ls
+rm -rf ./.git
+ls
+git status
+git log
+cd ../repos20200925
+git log
+cd ../Command_lines_MasterDS
+git log
+git checkout e3f75a0739213794e8ad21cda563855492151996
+git checkout master
+cd
+cd ./Repos
+cd ./Command_lines_MasterDS
+cp ~/.history .
