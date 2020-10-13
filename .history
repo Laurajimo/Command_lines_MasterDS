@@ -1228,3 +1228,209 @@ cd
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+git add .history
+git commit -m "Playing with Python and Git"
+git log
+git push
+git status
+cd
+ls
+cd ./Python
+ls
+cd ~/Downloads
+ls
+mv ./05_shell_and_magic.ipynb ../Python
+mv ./08_09_Lists_clean.ipynb ../Python
+mv ./12_Dict_y_set_clean.ipynb ../Python
+mv ./07_working_with_files-clean.ipynb ../Python
+mv ./10_tuplas_clean.ipynb ../Python
+ls
+cd
+cd ./Python
+ls
+mkdir 20200926
+mkdir 20201002
+mv ./Clase\ 1\ Python\ 20200926\ INTRO\ A\ PYTHON.ipynb ./20200926
+ls
+mv 05_shell_and_magic.ipynb ./20201002
+mv 10_tuplas_clean.ipynb ./20201002
+mv 07_working_with_files-clean.ipynb ./20201002
+mv 12_Dict_y_set_clean.ipynb ./20201002
+mv 08_09_Lists_clean.ipynb ./20201002
+ls
+cd ./20201002
+ls
+ipython
+jupyter notebook
+cd 
+ls
+cd ./Downloads
+ls
+mv ./numpy_playbackground.ipynb ../Python
+cd ../Python
+ls
+mkdir 20201003
+ls
+mv ./numpy_playbackground.ipynb ./20201003
+cd ./20201003
+ipython
+jupyter notebook
+ipython
+jupyter notebook
+cd
+cd ./Python/20201003
+ipython
+jupyter notebook
+cd
+gedit
+vim
+bg
+ps
+kill 7 17962
+kill -7 17962
+ps
+vim
+ps
+fg
+ps
+kill -7 18396
+ps
+kill -9 18396
+ls
+cat uniq_example.txt
+uniq uniq_example.txt
+rm -v ./uniq_example.txt
+ls
+seq 1 2 10 > uniq_example.txt
+cat uniq_example.txt
+seq 1 10 >> uniq_example.txt
+cat uniq_example.txt
+uniq uniq_example.txt
+cat uniq_example.txt | uniq
+sort uniq_example.txt | uniq
+sort uniq_example.txt | uniq -d
+sort uniq_example.txt | -c
+sort uniq_example.txt | uniq -c
+cat uniq_example.txt
+sort -n uniq_example.txt
+sort -n -r uniq_example.txt
+sort -n uniq_example.txt uniq_exammple2.txt
+sort -n uniq_example2.txt uniq_exammple.txt
+sort -n uniq_example.txt uniq_exammple.txt
+ls
+sort -n uniq_example.txt uniq_example.txt
+sort -n -u uniq_example.txt
+sort -n uniq_example.txt | uniq
+echo "ambas opciones devuelven lo mismo"
+echo "pero uniq nos da mÃƒs opciones como contar los duplicados o devolver unicamente los valores repetidos"
+cat uniq_example.txt
+sort -t"^" 6r ./Data/opentraveldata/optd_aircraft.csv | head
+sort -t"^" -k  6r ./Data/opentraveldata/optd_aircraft.csv | head
+cat ./Data/opentraveldata/optd_aircraft.csv| head
+sort -t"^" -k  6r ./Data/opentraveldata/optd_aircraft.csv | head
+echo "ordena por el sexto campo/columna en sentido inverso"
+sort -t"^" -k  6r,6 ./Data/opentraveldata/optd_aircraft.csv | head
+sort -t"^" --key=6r,6 ./Data/opentraveldata/optd_aircraft.csv | head
+sort -t"^" -k  2,2 ./Data/opentraveldata/optd_aircraft.csv | head
+sort -t"^" -k  2 ./Data/opentraveldata/optd_aircraft.csv | head
+sort -t"^" -k  2 ./Data/opentraveldata/optd_aircraft.csv | wc
+sort -t"^" -k  2,2 ./Data/opentraveldata/optd_aircraft.csv | wc
+sort -t"^" -k  7r ./Data/opentraveldata/optd_aircraft.csv | wc
+sort -t"^" -k  7r ./Data/opentraveldata/optd_aircraft.csv | head
+sort -t"^" -k  7 ./Data/opentraveldata/optd_aircraft.csv | head
+cut -d "^" -f 1-3,5 ./Data/opentraveldata/optd_aircraft.csv | head
+cat ./Data/opentraveldata/optd_aircraft.csv| head
+cut -d "^" -f 1-3,5 --output-delimiter "," ./Data/opentraveldata/optd_aircraft.csv | head
+cut -d "^" -f 1-3,5 --output-delimiter "OMG" ./Data/opentraveldata/optd_aircraft.csv | head
+cut -d "^" -f 1-3,5 --output-delimiter "OMG" ./Data/opentraveldata/optd_aircraft.csv | cut -d "OMG" -f 2 | head
+seq 10
+seq 10 | paste
+seq 10 | paste -s
+seq 10 | paste -s -d "^"
+seq 10 | paste -s -d "A B C"
+seq 10 | paste ---
+seq 10 | paste ----d "A B C"
+seq 10 | paste --- -d "A B C"
+seq 10 | paste - - - -d "A B C"
+seq 10 | paste - - -
+ls
+past Text_example.txt Text_example.txt
+paste Text_example.txt Text_example.txt
+paste 20lines.txt 20lines.txt
+paste 20lines.txt
+cat 20lines.txt
+paste -s 20lines.txt
+paste -s -d "^"20lines.txt
+paste -s -d "^" 20lines.txt
+paste 20lines.txt 20lines.txt
+seq 10 | paste -s -d "ABC"
+seq 10 | paste - - - -d "ABC"
+seq 1 10 >numbers; paste numbers 20lines.txt
+ls
+seq 1 10 >numbers; paste numbers 20lines.txt
+past < numbers 20lines.txt
+paste < numbers 20lines.txt
+seq 101 110 >numbers; paster numbers 20lines.txt
+seq 101 110 >numbers; paste numbers 20lines.txt
+paste < numbers 20lines.txt
+paste <numbers 20lines.txt
+cat numbers
+head < numbers 20lines
+head < numbers 20lines.txt
+paste < numbers < 20lines.txt
+paste <(cat numbers) <(cat 20lines.txt)
+paste <(seq 10) <(seq 15)
+paste <(seq 10) <20lines.txt
+paste <(seq 10) <(cat 20lines.txt)
+paste 10 <20lines.txt
+paste <10 <20lines.txt
+paste <(seq 10) <numbers
+cat numbers
+echo "master data science" | tr a A
+echo "master data science" | tr sa AB
+echo "master    data    science" | tr -s "" "^" 
+echo "master    data    science" | tr -s " " "^" 
+echo "mmaster    daaaaata    science" | tr -s "ma " "ma "
+echo "mmaster    daaaaata    science" | tr -s
+echo "mmaster    daaaaata    science" | tr -s "ma "
+echo "master data science" | tr -d sa
+echo "master data science" | tr -cd sa
+echo "mmaster    daaaaata    science" | tr -s "ma " "ms "
+echo "mmaster    daaaaata    science" | tr -d
+echo "master    data    science" | tr -s " " " " 
+echo "mmaster   daaaaata    science" | tr -s "[:blank:]" | tr -s "[:alnum:]"
+echo "master 123 data 124 science 1" | tr -cd "[:digit:]"
+echo "master 123 data 124 science 1" | tr -d "[:alpha:]"
+echo "master 123 data 124 science 1" | tr "[:lower:]" "[:upper:]"
+echo "master 123 data 124 science 1" | tr -d "[:digit:]" | tr -s " " "\n"
+cd ./Data/opentraveldata
+head optd_aircraft.csv
+cat optd_aircraft.csv | tr "^" ","
+cat optd_por_public.csv | tr -cd "[:blank:]" | wc
+head optd_por_public.csv
+head -1 optd_por_public.csv
+head -1 optd_por_public.csv | tr -cd "^"| wc
+paste <(seq 46) <(head -1 optd_por_public.csv)
+paste <(seq 46) <(cat optd_por_public.csv | head -1)
+paste -d"^"  <(head -1 optd_por_public.csv)
+cut -d "^" optd_por_public.csv | head -1
+cut -d"^" optd_por_public.csv | head -1
+cut -d "^" -f 1-46 --output-delimiter "\n" optd_por_public.csv | head -1
+head -1 optd_por_public.csv | tr -s "^" "\n"
+paste <(seq 46) <(head -1 optd_por_public.csv | tr -s "^" "\n")\
+
+head optd_airlines.csv
+head -1 optd_airlines.csv
+head -1 optd_airlines.csv | tr -cd "^"| wc
+cut -d "^" -f 1,14 optd_airlines.csv
+sort -t "^" -k 14r optd_airlines.csv
+sort -t "^" -k 14r optd_airlines.csv | head
+cut -d "^" -f 1,14 optd_airlines.csv
+cut -d "^" -f 1,14 optd_airlines.csv | sort -t "^" -k 2r
+cut -d "^" -f 1,14 optd_airlines.csv | sort -t "^" -k 2r | head
+head optd_airlines.csv
+cut -d "^" -f 1,9 optd_airlines.csv | sort -t "^" -k 2r | head
+cd
+cd ./Repos
+cd ./Command_lines_MasterDS
+cp ~/.history .
