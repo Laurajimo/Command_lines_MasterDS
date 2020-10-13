@@ -1434,3 +1434,67 @@ cd
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+git add .history
+git commit -m "Revising CL Advanced Tools"
+git log
+git push
+cd
+history
+ls
+cd ./Te
+cd ./Test
+ls
+cd
+cat sorted.txt
+cat uniq_example.txt
+find -type f -maxdepth 3 -name Text_example.txt
+cd ./Data/shell
+ls
+cat Text_example.txt
+grep this Text_example.txt
+grep -v this Text_example.txt
+grep -i -n "this" Text_example.txt
+grep -c this Text_example.txt Text_example.txt
+grep -cv this Text_example.txt
+grep -n line Text_example.txt
+grep -nw line Text_example.txt
+grep -nB 1 line Text_example.txt
+grep -nA 1 line Text_example.txt
+grep -H line Text_example.txt
+grep -n -i -E "^T" Text_example.txt
+grep -n -i -o -E "^T" Text_example.txt
+grep -n -o -i -E "^T" Text_example.txt
+grep -n -o -b -i -E "^T" Text_example.txt
+cat Text_example.txt
+grep this Text_example.txt
+grep -i this Text_example.txt
+grep -n -o -b -i -E "^T" Text_example.txt
+grep -n -i -o -E "^T" Text_example.txt
+grep -n -i -E "^T" Text_example.txt
+ls
+cd
+ls
+cd ./Data/opentraveldata
+ls
+head optd_airlines.csv
+head -1 optd_airlines.csv
+cut -d "^" -f 1,14
+cut -d "^" -f 1,14 optd_airlines.csv
+cut -d "^" -f 1,14 optd_airlines.csv | head
+cut -d "^" -f 1,14 optd_airlines.csv | sort -t "^" -k 2r | head
+grep -n -i -E "^T" Text_example.txt
+cd ../shell
+ls
+grep -n -i -E "^T" Text_example.txt
+grep -n -i -o -E "^T" Text_example.txt
+grep -n -o -b -i -E "^T" Text_example.txt
+grep -b -E "^T" Text_example.txt
+seq 5 5 20 | grep "[1-5]{2}"
+seq 5 5 20 | grep -E "[1-5]{2}"
+seq 5 5 200 | grep -E "[1-5]{2}"
+seq 5 5 200 | grep -w -E "[1-5]{2}"
+cd ../opentraveldata
+cd
+cd ./Repos
+cd ./Command_lines_MasterDS
+cp ~/.history .
