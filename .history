@@ -1498,3 +1498,197 @@ cd
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+git add .history
+git log
+git commit -m "Revising CL Advanced Tools 2"
+pit push
+git push
+cd
+echo Sunday | sed ssdaysnights
+echo Sunday | sed 's/day/night/'
+echo day.day | sed 's.day.night.'
+echo day.day | sed 's/day/night/g'
+cd ./Data/shell
+sed 's/this/THAT/gl' Text_example.txt
+cat Text_example.txt
+sed 's/this/THAT/gI' Text_example.txt
+cat Text_example.txt
+cp Text_example.txt Text_4sed.txt
+ls
+sed 's/this/THIS/g' Text_4sed.txt
+cat Text_4
+cat Text_4sed.txt
+sed -i 's/this/THIS/g' Text_4sed.txt
+cat Text_4sed.txt
+echo Sunday | sed s/day/night/
+seq 3 | sed '2p'
+seq 5 | sed -n '2,4p'
+seq 5
+seq 3
+seq 5 | sed -n '2,4!p'
+cat Text_4sed.txt
+seq -i '3!d' Text_4sed.txt
+sed -i '3!d' Text_4sed.txt
+cat Text_4sed.txt
+seq 5 | sed '/3/d'
+seq 5 | sed '3d'
+seq 3 | sed -p
+seq 3 | sed 2p
+seq 5 | sed -n '2,4p'
+seq 5 | sed '2,4p'
+sed -n 's/this/THIS/g' Text_4sed.txt
+cat Text_4sed.txt
+sed -n 's/this/THIS/gI' Text_4sed.txt
+cat Text_4sed.txt
+sed 's/this/THIS/gI' Text_4sed.txt
+seq 5 | sed -n 2,4d
+seq 5 | sed -n '2,4d'
+seq 5 | sed 3d
+seq 5 | sed 3dit status
+seq 5 | sed '3!d'
+gedit
+ls
+zip text_files Finn.txt Text_example.txt
+ls 
+ls
+unzip -l text_files.zip
+zipinfo text_files.zip
+unzip -c text_files.zip Text_example.txt | less
+ls
+unzip -c text_files.zip Text_example.txt
+ls
+unzip -l text_files.zip
+unzip -c text_files.zip 
+unzip -p text_files.zip Text_example.txt | less
+unzip -p text_files.zip Text_example.txt 
+unzip -c text_files.zip Text_example.txt 
+unzip text_files.zip
+ls
+unzip -l text_files.zip
+unzip text_files.zip
+ls
+unzip -l text_files.zip
+mv ./text_files.zip ~
+cd
+ls
+cd ./Data/shell
+ls
+cd
+unzip -l text_files.zip
+unzip text_files.zip
+ls
+unzip -l text_files.zip
+rm -rf Text_example.txt Finn.txt
+ls
+mv ./text_files.zip ./Data/shell
+ls
+cd ./Data/shell
+ls
+zipinfo text_files.zip
+zless text_files.zip
+zcat text_files.zip | less
+zless text_files.zip
+zgrep -n -H "line" text_files.zip
+ls
+zipinfo text_files.zip
+unzip -c text_files.zip Text_example.txt 
+cd ../opentraveldata
+gzip optd_aircraft.csv
+ls
+gunzip optd_aircraft.csv.gz
+ls
+gunzip optd_aircraft.csv.cz
+ls
+gzip optd_aircraft.csv
+ls
+gunzip optd_aircraft.csv.cz
+gzip -d optd_aircraft.csv.gz
+ls
+gzip -d optd_aircraft.csv.gz
+gzip optd_aircraft.csv
+ls
+gzip -l optd_aircraft.csv.gz
+gzip -d optd_aircraft.csv.gz
+ls
+gzip optd_airlines.csv optd_por_public.csv ref_airline_nb_of_flights.csv
+ls
+zless optd_airl
+zless optd_airlines.csv.gz
+gzip -d optd_airlines.csv.gz optd_por_public.csv.gz ref_airline_nb_of_flights.csv.gz
+ls
+bzip -k --best optd_airlines.csv
+bzip2 -k --best optd_airlines.csv
+ls
+bzip2 -f optd_airlines.csv
+ls
+bunzip2 optd_airlines.csv.bz2
+ls
+cd ../challenge
+ls
+bzcat bookings.csv.bz2 | head
+bzcat bookings.csv.bz2 | tail
+cd ../opentraveldata
+tar -cjvf opentravel.bz2.tar opentravel
+tar -czvf opentravel.gz.tar *csv
+ls
+zipinfo opentravel.gz.tar
+gzip -l opentravel.gz.tar
+tar -t opentravel.gz.tar
+mkdir copy_of_optd; tar -xzvf ./opentravel.gz.tar -C copy_of_optd
+ls
+cd ./copy_of_optd
+ls
+cd ../
+tar -cjvz opentravel.bz2.tar opentraveldata
+tar -cjvf opentravel.bz2.tar opentraveldata
+ls
+tar -czvf opentravel.gz.tar opentraveldata
+ls
+tar -cvf opentravel.tar opentraveldata
+ls
+tar -tvf opentravel.bz2.tar
+cd ./opentraveldata
+ls
+tar -tvf opentravel.bz2.tar
+tar -tvf opentravel.gz.tar
+gedit
+find / -name "*.txt" -exec ls-l {} \; exec sleep 5 \;
+find / -name "*.txt" -exec ls-l {} \; -exec sleep 5 \;
+bg
+cd
+gedit
+vim
+bg
+ps
+fg
+ps
+watch ps
+ps
+find& / -name "*.txt" -exec ls-l {} \; -exec sleep 5 \;
+ps
+find& / -name "*.txt" -exec ls-l {} \; -exec sleep 5 \;
+vim
+find& / -name "*.txt" -exec ls-l {} \; -exec sleep 5 \; &
+find / -name "*.txt" -exec ls-l {} \; -exec sleep 5 \; &
+sh -c 'sleep 3 && echo I just woke up' & jobs
+ps
+nohup find / -name "*.txt" -exec ls-l {} \; -exec sleep 5 \; &
+jobs
+ps
+ps
+jobs
+fg
+fg %1
+fg %2
+fg %3
+ps
+vim
+ps -ef
+ps
+kill -7 14111
+ps
+kill -9 14111
+ps
+cd ./Repos
+cd ./Command_lines_MasterDS
+cp ~/.history .
