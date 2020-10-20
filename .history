@@ -1692,3 +1692,93 @@ ps
 cd ./Repos
 cd ./Command_lines_MasterDS
 cp ~/.history .
+git add .history
+git log
+git commit -m "Revising CL Advanced Tools 3"
+git push
+ipython
+jupyter-notebook
+cd
+ipython
+jupyter-notebookj
+jupyter-notebook
+ipython
+jupyter/notebook
+jupyter-notebook
+cd ./Python
+ls
+mkdir 20201016
+ls
+cd ./20201016
+cd
+cd ./Downloads
+ls
+mv ./02-statistics_with_Python.empty.ipynb ../Python/20201016
+mv ./05-web_apis_and_scraping_101.empty.ipynb ../Python/20201016
+mv ./03-introduction_to_pandas.empty.ipynb ../Python/20201016
+mv ./nsfg.csv ../Python/20201016
+mv ./04-advanced_pandas.empty.ipynb ../Python/20201016
+cd
+cd ./Downloads
+ls
+cd ../Python/20201016
+ls
+ipython
+jupyter-notebook
+cd
+cd ./Data/opentraveldata
+csvlook optd_aircraft.csv | less
+csvlook -d '^' optd_aircraft.csv| less
+csvlook optd_aircraft.csv | less
+csvlook -ld '^' optd_aircraft.csv| less
+csvlook -ld '^' optd_aircraft.csv| less -S
+csvstat -d '^' optd_aircraft.csv | less
+csvstat -d '^' -c 2-4,7  optd_aircraft.csv | less
+csvstat -d '^' -c manufacturer  optd_aircraft.csv | less
+csvlook -ld '^' optd_aircraft.csv| less -S
+csvcut -n optd_aircraft.csv
+csvcut -d "^" -c 2 optd_aircraft.csv | head
+csvcut -d "^" -c manufacturer optd_aircraft.csv | head
+csvcut -d "^" -c manufacturer optd_aircraft.csv | csvlook | head
+csvcut -d "^" -c manufacturer optd_aircraft.csv | tail -n +2 | head
+csvcut -d "^" -c 2-4 optd_aircraft.csv | head
+csvcut -d "^" -c manufacturer optd_aircraft.csv | tail -n +2 
+less optd_aircraft.csv
+grep 380 optd_aircraft.csv
+grep "^380" optd_aircraft.csv
+csvgrep -d '^' -m 380 optd_aircraft.csv
+csvgrep -d '^' -c iata_code -m 380 optd_aircraft.csv
+csvgrep -d '^' -c iata_code -m 380 optd_aircraft.csv | csvlook | less -S
+csvgrep -d '^' -c manufacturer -m Fokker optd_aircraft.csv > fokker.csv
+cat fokker.csv
+csvgrep -d '^' -c iata_code 380 optd_aircraft.csv | wc
+less optd_aircraft.csv
+sort -t "^" -k 7rn,7 optd_aircraft.csv | head -3
+csvsort -n -d '^' optd_aircraft.csv
+csvsort -c nb_engines -r airbus.csv | head -3
+csvsort -c nb_engines -r optd_aircraft.csv | head -3
+csvsort -d '^' -c nb_engines -r optd_aircraft.csv | head -3
+csvsort -d '^' -c nb_engines -r optd_aircraft.csv | csvcut -c manufacturer,model,nb_engines | head | csvlook
+csvsort -d '^' -c nb_engines optd_aircraft.csv | csvcut -c manufacturer,model,nb_engines | head | csvlook
+csvsort -d '^' -c nb_engines optd_aircraft.csv | csvcut -c manufacturer,model,nb_engines | csvlook | less -S
+csvsort -d '^' -c nb_engines -r optd_aircraft.csv | csvcut -c manufacturer,model,nb_engines | csvlook | less -S
+csvformat -d "^" -D "~" ./optd_aircraft.csv > ./optd_aircraft.new_del.csv
+ls
+cat ./optd_aircraft.csv | tr "^" "~" | wc
+less optd_aircraft.new_del.csv
+head optd_aircraft.csv > optd_aircraft_10.csv
+ls
+csvstack optd_aircraft_10.csv optd_aircraft.csv | less
+csvstack optd_aircraft_10.csv optd_airlines.csv | less
+csvsql -d "^" optd_aircraft.csv > sql_aircraft.sql
+csvsql -d '^? -i postgresql optd_aircraft.csv
+cd ../
+ls
+cd ./shell
+ls
+cat Finn.txt | tr '[:upper]' '[:lower]' | grep -oE '\w+' | sort | uniq -c | sort -nr | head 10
+cat Finn.txt | tr '[:upper]' '[:lower]' | grep -oE '\w+' | sort | uniq -c | sort -nr | head -10
+cd
+cd ./Repos
+cd ./Command_lines_MasterDS
+cp ~/.history .
